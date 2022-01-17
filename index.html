@@ -281,7 +281,8 @@
           </span>
         </h2>
         <div class="contact__form-container">
-          <form method="post" action="mail.php" class="contact__form">
+          <!-- <form method="post" action="mail.php" class="contact__form"> -->
+          <form method="post" action="http://formspree.io/unai.carbajo.escajadillo@email.com" class="contact__form">
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
               <input
@@ -298,9 +299,9 @@
               <input
                 required
                 placeholder="Enter Your Email"
-                type="text"
+                type="email"
                 class="contact__form-input"
-                name="email"
+                name="_replyto"
                 id="email"
               />
             </div>
@@ -312,11 +313,12 @@
                 rows="10"
                 class="contact__form-input"
                 placeholder="Enter Your Message"
-                name="message"
+                name="body"
                 id="message"
               ></textarea>
             </div>
-            <button type="Submit" name="Submit" value="Submit" class="btn btn--theme contact__btn">Submit
+            <!-- <form action="http://formspree.io/you@email.com"><input type="email" name="_replyto"><textarea   name="body"></textarea><input type="submit" value="Send"></form> -->
+            <button type="Submit" name="Submit" value="Send" class="btn btn--theme contact__btn">Submit
             </button>
           </form>
         </div>
