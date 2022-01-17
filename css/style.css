@@ -136,6 +136,34 @@ textarea {
   margin: auto;
   width: 92%; }
 
+.container {  display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+gap: 0px 0px;
+grid-auto-flow: row;
+}
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "nombre extra"
+    "descripcion extra"
+    "git extra";
+}
+
+.nombre { grid-area: nombre; }
+
+.descripcion { grid-area: descripcion; }
+
+.git { grid-area: git; }
+
+.extra { grid-area: extra; 
+         margin-left: 35px;}
+
+
 .btn {
   background: #fff;
   color: #333;
