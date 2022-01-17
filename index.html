@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="referrer" content="origin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dopefolio</title>
@@ -281,8 +282,7 @@
           </span>
         </h2>
         <div class="contact__form-container">
-          <!-- <form method="post" action="mail.php" class="contact__form"> -->
-          <form method="post" action="http://formspree.io/unai.carbajo.escajadillo@email.com" class="contact__form">
+          <form method="POST" action="https://formspree.io/f/mqknebdl" class="contact__form">
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
               <input
@@ -290,7 +290,7 @@
                 placeholder="Enter Your Name"
                 type="text"
                 class="contact__form-input"
-                name="name"
+                name="Name"
                 id="name"
               />
             </div>
@@ -313,13 +313,12 @@
                 rows="10"
                 class="contact__form-input"
                 placeholder="Enter Your Message"
-                name="body"
+                name="message"
                 id="message"
               ></textarea>
             </div>
-            <!-- <form action="http://formspree.io/you@email.com"><input type="email" name="_replyto"><textarea   name="body"></textarea><input type="submit" value="Send"></form> -->
-            <button type="Submit" name="Submit" value="Send" class="btn btn--theme contact__btn">Submit
-            </button>
+            <input type="Submit" name="Submit" value="Send" class="btn btn--theme contact__btn">
+          </input>
           </form>
         </div>
       </div>
