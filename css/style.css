@@ -137,13 +137,6 @@ textarea {
   width: 92%; }
 
 .container {  display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr;
-gap: 0px 0px;
-grid-auto-flow: row;
-}
-
-.container {  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.1fr 1fr 0.2fr;
   gap: 0px 0px;
@@ -152,7 +145,10 @@ grid-auto-flow: row;
     "nombre extra"
     "descripcion extra"
     "git extra";
-}
+  }
+  .extra { grid-area: extra; 
+         margin-left: 35px;
+        }
 
 .nombre { grid-area: nombre; }
 
@@ -161,9 +157,8 @@ grid-auto-flow: row;
 .git { grid-area: git; }
 
 .extra { grid-area: extra; 
-         margin-left: 35px;}
-
-
+         margin-left: 35px;
+        }
 .btn {
   background: #fff;
   color: #333;
@@ -306,6 +301,20 @@ grid-auto-flow: row;
       .about__content-details-para:last-child {
         margin-bottom: 4rem; }
 
+@media screen and (max-width: 80em){
+    .container {  display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.1fr 1fr 0.2fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "nombre"
+        "descripcion"
+        "git";
+    }
+    .extra { display: none !important;
+        }
+}
 .projects__row {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -346,7 +355,7 @@ grid-auto-flow: row;
     .projects__row-content-desc {
       font-size: 1.8rem;
       color: grey;
-      max-width: 60rem;
+      /* max-width: 60rem; */
       line-height: 1.7;
       margin-bottom: 3rem; }
       @media only screen and (max-width: 37.5em) {
@@ -525,7 +534,7 @@ grid-auto-flow: row;
           margin: 0; } }
 
 .header {
-  /* position: fixed; */
+  position: fixed;
   width: 100%;
   z-index: 1000;
   background: #000;
