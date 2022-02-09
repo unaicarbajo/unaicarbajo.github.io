@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>One-class models for the prognosis of COVID-19 infection outcome</title>
     <meta name="description" content="Case study page of Project" />
+    <link rel="shortcut icon" href="../assets/png/lambda.png" />
 
     <link rel="stylesheet" href="../css/style.css" />
 
@@ -15,11 +16,12 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+   <script src="https://tarptaeya.github.io/repo-card/repo-card.js"></script> 
   </head>
   <body>
     <header class="header">
       <div class="header__content">
-        <div class="header__logo-container">
+        <a class="header__logo-container" href="../">
           <div class="header__logo-img-cont">
             <img
               src="../assets/jpeg/perfil.jpg"
@@ -28,7 +30,7 @@
             />
           </div>
           <span class="header__logo-sub">UNAI CARBAJO</span>
-        </div>
+        </a>
         <div class="header__main">
           <ul class="header__links">
             <li class="header__link-wrapper">
@@ -84,8 +86,8 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">TODO</h1>
-        <div class="project-cs-hero__info">
+        <h1 class="heading-primary">One-class models for the prognosis of COVID-19 infection outcome</h1>
+        <!-- <div class="project-cs-hero__info">
           <p class="text-primary">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
             in numquam incidunt earum quaerat cum fuga, atque similique natus
@@ -94,7 +96,7 @@
         </div>
         <div class="project-cs-hero__cta">
           <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
-        </div>
+        </div> -->
       </div>
     </section>
     <section class="project-details">
@@ -102,7 +104,7 @@
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
             <img
-              src="../assets/jpeg/project-mockup-example.jpeg"
+              src="../assets/jpeg/pc-oc.jpg"
               alt="Project Image"
               class="project-details__showcase-img"
             />
@@ -120,26 +122,23 @@
               This project presents a machine learning workflow composed by a data filtering process, followed by a model hyperparameter optimization step, and eventually, the training, testing and evaluation steps of the final models. The workflow implements 3 relevant One-Class Classifiers: One-Class Support Vector Machine, Local Outlier Factor and Autoencoder. These models follow the One-Class Classification paradigm, which is a branch of unsupervised machine learning and it is based on making classifications with models entirely trained with data belonging to a single class.             </p>
              </p>
             </div>
+            <div class="extra"><embed src="..\documentation.pdf" width="100%" height="375" type="application/pdf"></div>
+            <br>
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Tools Used</h3>
+              <h3 class="project-details__content-title" style="margin-top: 5%">Tools Used</h3>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
+                <div class="skills__skill">Jupyter Notebook</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">Sci-kit Learns</div>
+                <div class="skills__skill">TensorFlow</div>
+                <div class="skills__skill">PyOD</div>
+                <div class="skills__skill">Pandas</div>
               </div>
             </div>
             <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
-              <a
+              <h3 class="project-details__content-title">Git repository</h3>
+              <div class="git"><div class="repo-card" style="margin-bottom: 20px;" data-repo="unaicarbajo/one-class-covid19"></div></div>
+              <!-- <a
                 href="#"
                 class="btn btn--med btn--theme project-details__links-btn"
                 target="_blank"
@@ -150,7 +149,7 @@
                 class="btn btn--med btn--theme-inv project-details__links-btn"
                 target="_blank"
                 >Code Link</a
-              >
+              > -->
             </div>
           </div>
         </div>
@@ -219,6 +218,6 @@
       </div>
     </footer>
 
-    <script src="./index.js"></script>
+    <script src="../index.js"></script>
   </body>
 </html>
